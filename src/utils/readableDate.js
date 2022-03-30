@@ -14,13 +14,9 @@ const months = [
   'Dec',
 ]
 
-const dateObj = d => ({
+export const dateObj = d => ({
   day: days[d.getDay()],
   date: d.getDate(),
   month: months[d.getMonth()],
   year: d.getFullYear(),
 })
-
-module.exports = {
-  dateObj,
-}

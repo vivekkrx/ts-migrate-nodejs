@@ -1,3 +1,3 @@
-const { dateObj } = require('./readableDate')
+import { dateObj } from './readableDate'
 
-module.exports = { dateObj }
+export { dateObj }

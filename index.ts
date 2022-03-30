@@ -1,10 +1,10 @@
-const express = require('express')
+import express, { Request, Response } from 'express'
+import { dateObj } from './src/utils'
 const app = express()
-const { dateObj } = require('./src/utils')
 
 const PORT = 5000
 
-app.get('/', (req, res) => {
+app.get('/', (req: Request, res: Response) => {
   const date = dateObj(new Date())
   res.send('Date - ' + date.month + ' ' + date.date + ', ' + date.year)
 })
