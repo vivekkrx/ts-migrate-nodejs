@@ -1,5 +1,5 @@
-const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-const months = [
+const days: string[] = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+const months: string[] = [
   'Jan',
   'Feb',
   'Mar',
@@ -14,7 +14,7 @@ const months = [
   'Dec',
 ]
 
-export const dateObj = d => ({
+export const dateObj = (d: Date): IDateObj => ({
   day: days[d.getDay()],
   date: d.getDate(),
   month: months[d.getMonth()],
