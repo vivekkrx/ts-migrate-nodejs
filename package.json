@@ -1,0 +1,15 @@
+{
+  "name": "migrate-node-to-typescript",
+  "version": "1.0.0",
+  "description": "migrrate nodejs codebase to typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon index.js"
+  },
+  "author": "Vivek Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
